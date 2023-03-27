@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="container">
+        <!-- it contain the clock -->
+        <div id="clock"></div>
+        <!-- by datetime-local we get a dilog box for select date time -->
+        <input  onchange="setAlarmTime(this.value)"  name="alarmTime" type="dateTime-local">
+        
+        <div class="control">
+            <button  onclick="setAlarm()" class="button set-alarm">set alarm</button>
+            <button onclick="clearAlarm()"  class="button clear-alarm">clear alarm</button>
+        </div>
+        <!-- <button  onclick="setnum()" >set alarm</button> -->
+    </section>
+    <script src="javascript.js"></script>
+</body>
+</html><script></script>
